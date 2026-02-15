@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Script to generate a self-signed SSL certificate and private key
+
+# Output file names
+KEY_FILE="private.key"
+CERT_FILE="certificate.crt"
+
+# Generate the certificate
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:4096 \
+  -keyout "$KEY_FILE" -out "$CERT_FILE"
+
+echo "Private key saved to $KEY_FILE"
+echo "Certificate saved to $CERT_FILE"
