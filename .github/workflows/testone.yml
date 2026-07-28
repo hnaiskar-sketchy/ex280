@@ -1,3 +1,10 @@
+name: Hello World
+
+on:
+  push:
+    branches:
+      - hnaiskar-sketchy-patch-1
+
 jobs:
   build:
     runs-on: ubuntu-latest
