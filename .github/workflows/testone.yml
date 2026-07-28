@@ -5,6 +5,6 @@
      runs-on: ubuntu-latest
      steps:
        - name: Hello Step
-         run:  |
-         echo "This is line One"
-         echo "This is line two"
+         run: ]
+         echo "This is first line"
+         echo "This is line number 2"
