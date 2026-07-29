@@ -14,13 +14,13 @@ jobs:
           echo "This is first line"
           echo "This is line number 2"
 
-test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Build Step
         run: echo "Running test cases"
 
-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy the App
