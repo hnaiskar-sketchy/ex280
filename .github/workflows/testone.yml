@@ -1,9 +1,10 @@
-name: Hello World
+ name: Hello World
 
 on:
   push:
     branches:
       - hnaiskar-sketchy-patch-1
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,11 +18,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Build Step
+      - name: Test Step
         run: echo "Running test cases"
 
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy the App
+      - name: Deploy Step
         run: echo "Deploy the app"
