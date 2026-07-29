@@ -21,7 +21,7 @@ jobs:
           run: echo "Running test cases"
    
   deploy:
-     runs-on: ububtu-latest
+     runs-on: ubuntu-latest
      steps:
       - name: Deploy the App
         run: echo "Deploy the app"
